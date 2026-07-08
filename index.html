@@ -7,15 +7,44 @@
     <title>Document</title>
 
     <!-- CSS styles -->
+
+    <!-- Boostrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- AOS CSS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
+    <!-- Boostrap Icone -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
     <!-- internal CSS -->
     <style>
         .navbar-blue-900 {
             background-color: #0c3065;
+        }
+
+        .service-img {
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .timeline {
+            border-left: 4px solid #0d6efd;
+        }
+
+        .timeline-icon {
+            width: 60px;
+            height: 60px;
+            min-width: 60px;
+        }
+
+        .timeline-item {
+            transition: 0.3 ease;
+        }
+
+        .dns-icon {
+            width: 70px;
+            height: 70px;
         }
     </style>
 
@@ -26,13 +55,14 @@
 
 
     <!-- Start of nav bar -->
-    <nav  data-bs-theme="dark" class="navbar navbar-expand-lg sticky-top shadow-sm navbar-blue-900">
+    <nav data-bs-theme="dark" class="navbar navbar-expand-lg sticky-top shadow-sm navbar-blue-900">
         <div class="container">
 
             <a class="navbar-brand text-white fw-bold" href="#">HTLM Fundamentals</a>
 
-            <button class="navbar-toggler border-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
-                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler border-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
@@ -52,7 +82,10 @@
                         <a class="nav-link text-white" href="#">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active text-white" href="#">Browsers</a>
+                        <a class="nav-link text-white" href="#daily-life">Daily Life</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" href="#browsers">Browsers</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-white" href="#">DNS</a>
@@ -68,6 +101,8 @@
         </div>
     </nav>
 
+    <!-- End of nav bar -->
+
 
     <!-- Start of header and subtitle -->
     <div class="container text-center">
@@ -81,10 +116,11 @@
     </div>
     <!-- End of header and subtitle -->
 
+    <!-- Start of main content -->
+
     <main class="bg-white">
 
-        <!-- Home Section -->
-
+        <!-- Start of Home Section -->
         <section id="home" class="container my-3">
             <div class="card shadow-sm border-0">
                 <div class="card-body p-4 p-md-5">
@@ -95,21 +131,23 @@
 
                     <p class="lead text-muted">
                         This website is a reference guide for beginners who are learning Internet Technologies and HTML.
-                        It explains the basic concepts of the Internet, how the Internet works, the role of web browsers,
+                        It explains the basic concepts of the Internet, how the Internet works, the role of web
+                        browsers,
                         the importance of DNS, and commonly used HTML tags.
                     </p>
 
                     <p>
                         HTML is the foundation of web development. It is used to structure content on web pages using
-                        elements such as headings, paragraphs, lists, links, images, tables, and forms. Understanding HTML
+                        elements such as headings, paragraphs, lists, links, images, tables, and forms. Understanding
+                        HTML
                         is important for building well-structured, accessible, and search-engine-friendly websites.
                     </p>
                 </div>
             </div>
         </section>
+        <!-- End of Home Section -->
 
-        <!-- Internet Section -->
-
+        <!-- Start of Internet Section -->
         <section id="internet" class="container my-5">
             <div class="card shadow-sm border-0">
                 <div class="card body p-4 p-md-5">
@@ -117,7 +155,7 @@
                     <h2 class="text-primary fw-bold mb-3">
                         What is the Internet?
                     </h2>
-                    
+
                     <p>
                         The Internet is a global network of connected computers, servers, mobile devices,
                         and other digital systems. These devices communicate with each other using standard
@@ -136,8 +174,9 @@
                 </div>
             </div>
         </section>
+        <!--End of Internet Section -->
 
-        <!-- How It Works -->
+        <!-- Start of How It Works Section -->
         <section id="how-it-works" class="container my-5">
             <div class="card shadow-sm border-0">
                 <div class="card-body p-4 p-md-5">
@@ -175,16 +214,511 @@
             </div>
 
         </section>
-            
+        <!-- End of How It Works Section -->
+
+        <!-- Start of Services Section -->
+        <section id="services" class="container py-5">
+            <div class="text-center mb-5">
+
+
+                <h2 class="text-primary fw-bold ">
+                    Main Services on the Internet
+                </h2>
+
+                <p class="lead text-secondary">
+                    The Internet provides many useful services that help people communicate,
+                    learn, work, shop, and share information.
+                </p>
+            </div>
+
+
+            <!-- add Gride and Cards -->
+
+            <!-- WWW card -->
+            <div class="container text-center">
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 shadow-sm border-0">
+                            <img src="assest/world wide web.jpg" class="card-img-top service-img" alt="...">
+                            <div class="card-body text-center p-4">
+                                <h3 class="h5 fw-bold mt-3">World Wide Web</h3>
+                                <p class="card-text">
+                                    The World Wide Web is an information system where documents and other web resources
+                                    are identified by URLs.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Email card -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 shadow-sm border-0">
+                            <img src="assest/email.png" class="card-img-top service-img " alt="...">
+                            <div class="card-body text-center p-4">
+                                <h3 class="h5 fw-bold mt-3">Email</h3>
+                                <p class="card-text">
+                                    Email allows users to send and receive electronic messages through the Internet.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- File Transfer card -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 shadow-sm border-0">
+                            <img src="assest/file transfer.jpg" class="card-img-top service-img" alt="...">
+                            <div class="card-body text-center p-4">
+                                <h3 class="h5 fw-bold mt-3">File Transfer</h3>
+                                <p class="card-text">
+                                    File transfer protocols allow users to send and receive files over the Internet.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social Media card -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 shadow-sm border-0">
+                            <img src="assest/social media.jpg" class="card-img-top service-img" alt="...">
+                            <div class="card-body text-center p-4">
+                                <h3 class="h5 fw-bold mt-3">Social Media</h3>
+                                <p class="card-text">
+                                    Social media platforms allow users to create, share, and interact with content over
+                                    the Internet.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Online Banking card -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 shadow-sm border-0">
+                            <img src="assest/online-banking.jpg" class="card-img-top service-img" alt="...">
+                            <div class="card-body text-center p-4">
+                                <h3 class="h5 fw-bold mt-3">Online Banking</h3>
+                                <p class="card-text">
+                                    Online banking allows users to manage their bank accounts and perform transactions
+                                    over the Internet.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- E-Commerce card -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 shadow-sm border-0">
+                            <img src="assest/e-commerce.jpg" class="card-img-top service-img" alt="...">
+                            <div class="card-body text-center p-4">
+                                <h3 class="h5 fw-bold mt-3">E-Commerce</h3>
+                                <p class="card-text">
+                                    E-commerce platforms allow users to buy and sell products over the Internet.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cloud Storage card -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 shadow-sm border-0">
+                            <img src="assest/cloud-storage.jpg" class="card-img-top service-img" alt="...">
+                            <div class="card-body text-center p-4">
+                                <h3 class="h5 fw-bold mt-3">Cloud Storage</h3>
+                                <p class="card-text">
+                                    Cloud storage services allow users to store and access their data over the Internet.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Streaming Services card -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 shadow-sm border-0">
+                            <img src="assest/streaming services.avif" class="card-img-top service-img" alt="...">
+                            <div class="card-body text-center p-4">
+                                <h3 class="h5 fw-bold mt-3">Streaming Services</h3>
+                                <p class="card-text">
+                                    Streaming services allow users to watch movies, TV shows, and listen to music over
+                                    the Internet.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Online Education card -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 shadow-sm border-0">
+                            <img src="assest/online education.jpg" class="card-img-top service-img" alt="...">
+                            <div class="card-body text-center p-4">
+                                <h3 class="h5 fw-bold mt-3">Online Education</h3>
+                                <p class="card-text">
+                                    Online education platforms allow users to access courses and learning materials over
+                                    the Internet.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--    End of Services Section -->
+
+        <!-- Start of Daily Life Section -->
+        <!-- Start of Heading area-->
+        <section id="daily-life" class="container py-5">
+            <div class="text-center mb-5">
+
+                <h2 class="text-primary fw-bold">
+                    Use of the Internet in Daily Life
+                </h2>
+
+                <p class="lead text-secondary">
+                    The Internet is used in many areas of daily life. It helps people communicate, learn, work, shop,
+                    enjoy entertainment, and access online services.
+                </p>
+            </div>
+
+            <!-- End of Heading Area -->
+
+
+            <!-- Start of Timeline Wrapper-->
+            <!-- Create Verticle Line -->
+            <div class="timeline ps-4">
+                <!-- icone circle create -->
+                <article class="timeline-item bg-white rounded-4 shadow-sm p-4 mb-4">
+                    <div class="d-flex align-items-start gap-3">
+                        <!-- 01.icon - Communication  -->
+                        <!-- icon circle -->
+                        <div
+                            class="timeline-icon bg-primary text-white rounded-circle d-flex align-items-center justify-content-center">
+                            <!-- Communication icon -->
+                            <i class="bi bi-chat-dots fs-3"></i>
+                        </div>
+                        <!-- tect content -->
+                        <div>
+                            <h3 class="h5 fw-bold text-primary">Communication</h3>
+                            <p class="text-secondary mb-0">
+                                People use the Internet for email, messaging apps, video calls,
+                                and social media communication.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="timeline-item bg-white rounded-4 shadow-sm p-4 mb-4">
+                    <div class="d-flex align-items-start gap-3">
+                        <!-- 01.icon - Communication  -->
+                        <div
+                            class="timeline-icon bg-success text-white rounded-circle d-flex align-items-center justify-content-center">
+                            <!-- Communication icon -->
+                            <i class="bi bi-chat-dots fs-3"></i>
+                        </div>
+
+                        <div>
+                            <h3 class="h5 fw-bold text-success">Education</h3>
+                            <p class="text-secondary mb-0">
+                                Students use the Internet for online classes, research, assignments,
+                                tutorials, educational videos, and digital learning platforms.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="timeline-item bg-white rounded-4 shadow-sm p-4 mb-4">
+                    <div class="d-flex align-items-start gap-3">
+                        <div
+                            class="timeline-icon bg-primary text-white rounded-circle d-flex align-items-center justify-content-center">
+                            <i class="bi bi-briefcase fs-3"></i>
+                        </div>
+
+                        <div>
+                            <h3 class="h5 fw-bold text-primary">Business</h3>
+                            <p class="text-secondary mb-0">
+                                Businesses use the Internet for online marketing, sales,
+                                customer service, online meetings, and online payments.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="timeline-item bg-white rounded-4 shadow-sm p-4 mb-4">
+                    <div class="d-flex align-items-start gap-3">
+                        <div
+                            class="timeline-icon bg-success text-white rounded-circle d-flex align-items-center justify-content-center">
+                            <i class="bi bi-play-circle fs-3"></i>
+                        </div>
+
+                        <div>
+                            <h3 class="h5 fw-bold text-success">Entertainment</h3>
+                            <p class="text-secondary mb-0">
+                                The Internet is used for watching movies, listening to music,
+                                playing online games, reading news, and streaming videos.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+
+                <article class="timeline-item bg-white rounded-4 shadow-sm p-4 mb-4">
+                    <div class="d-flex align-items-start gap-3">
+                        <div
+                            class="timeline-icon bg-primary text-white rounded-circle d-flex align-items-center justify-content-center">
+                            <i class="bi bi-cart fs-3"></i>
+                        </div>
+
+                        <div>
+                            <h3 class="h5 fw-bold text-primary">Online Shopping</h3>
+                            <p class="text-secondary mb-0">
+                                Users can buy products, compare prices, order food,
+                                book tickets, and access many services from home.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+
+
+                <article class="timeline-item bg-white rounded-4 shadow-sm p-4 mb-4">
+                    <div class="d-flex align-items-start gap-3">
+                        <div
+                            class="timeline-icon bg-success text-white rounded-circle d-flex align-items-center justify-content-center">
+                            <i class="bi bi-calendar-check fs-3"></i>
+                        </div>
+
+                        <div>
+                            <h3 class="h5 fw-bold text-success">Online Services</h3>
+                            <p class="text-secondary mb-0">
+                                The Internet helps people pay bills, use online banking,
+                                access government services, book appointments, and manage daily tasks.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+        <!-- End od Daily Life Section -->
+
+
+
+        <!-- Start of Browsers Section -->
+        <section id="browsers" class="container py-5">
+
+            <div class="row align-items-center g-5">
+
+                <div class="col-lg-6">
+
+                    <p class="text-success fw-bold mb-2">
+                        Web Browsers
+                    </p>
+
+                    <h2 class="text-primary fw-bold mb-3">
+                        Role of Web Browser
+                    </h2>
+
+                    <p class="lead text-secondary">
+                        A web browser is software used to access and view websites.
+                    </p>
+
+                    <p>
+                        Examples of web browsers include Google Chrome, Mozilla Firefox,
+                        Microsoft Edge, Safari, and Opera.
+                    </p>
+
+                    <p>
+                        The browser sends requests to web servers, receives website files,
+                        and displays them as web pages. It reads HTML documents and shows
+                        the content in a user-friendly way.
+                    </p>
+
+                    <p>
+                        Without web browsers, users would not be able to easily view and
+                        interact with websites.
+                    </p>
+
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="bg-primary-subtle rounded-4 p-4 shadow-sm">
+
+                        <h3 class="h5 fw-bold text-primary mb-4">What Can a browser Display</h3>
+
+                        <div class="d-flex align-items-start gap-3 mb-3">
+                            <i class="bi bi-file-text text-primary fs-3"></i>
+                            <div>
+                                <h4 class="h6 fw-bold mb-1">
+                                    Text and HTML Content
+                                </h4>
+
+                                <p class="text-secondary mb-0">
+                                    Browsers read HTML files and display headings, paragraphs,
+                                    lists, and links.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-start gap-3 mb-3">
+                            <i class="bi bi-image text-success fs-3"></i>
+                            <div>
+                                <h4 class="h6 fw-bold mb-1">
+                                    Images and Media
+                                </h4>
+
+                                <p class="text-secondary mb-0">
+                                    Browsers can display images, videos, audio, and other media.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-start gap-3 mb-3">
+                            <i class="bi bi-ui-checks text-primary fs-3"></i>
+                            <div>
+                                <h4 class="h6 fw-bold mb-1">
+                                    Forms and Interaction
+                                </h4>
+
+                                <p class="text-secondary mb-0">
+                                    Browsers allow users to fill forms, click buttons,
+                                    and interact with web pages.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-start gap-3 mb-3">
+                            <i class="bi bi-shield-check text-success fs-3"></i>
+                            <div>
+                                <h4 class="h6 fw-bold mb-1">
+                                    Security Features
+                                </h4>
+
+                                <p class="text-secondary mb-0">
+                                    Browsers support HTTPS, bookmarks, downloads, extensions,
+                                    and developer tools.
+                                </p>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End of Browsers Section -->
+
+
+        <!-- Start of DNS section -->
+        <!-- Start of 2nd DNA Section  -->
+
+        
+        
+        <!-- End of DNS section -->
+         <section id="dns" class="container py-5">
+
+            <div class="text-center mb-5">
+                <p class="text-success fw-bold mb-2">
+                    Domain Name System
+                </p>
+
+                <h2 class="text-primary">
+                    What is DNS and Why is it Important?
+                </h2>
+
+                <p class="lead text-secondary">
+                    DNS converts domain names into IP addresses so browsers can find the correct web server.
+                </p>
+            </div>
+
+            <div class="row g-3 align-items-center text-center">
+                <div class="col-12 col-md">
+                    <article class="bg-white border rounded-4 shadow-sm p-4 h-100">
+                        <div class="dns-icon bg-primary text-white rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3">
+                            <i class="bi bi-person fs-2"></i>
+                        </div>
+
+                        <h3 class="h5 fw-bold text-primary">User</h3>
+                        <p class="text-secondary mb-0">
+                            The user types a domain name such as google.com.
+                        </p>
+                    </article>
+                </div>
+
+                <div class="col-md-auto d-none d-md-block">
+                    <i class="bi bi-arrow-right fs-2 text-primary"></i>
+                </div>
+            </div>
+
+
+            <div class="col-12 col-md">
+                    <article class="bg-white border rounded-4 shadow-sm p-4 h-100">
+                        <div class="dns-icon bg-primary text-white rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3">
+                            <i class="bi bi-person fs-2"></i>
+                        </div>
+
+                        <h3 class="h5 fw-bold text-primary">User</h3>
+                        <p class="text-secondary mb-0">
+                            The user types a domain name such as google.com.
+                        </p>
+                    </article>
+                </div>
+
+                <div class="col-md-auto d-none d-md-block">
+                    <i class="bi bi-arrow-right fs-2 text-primary"></i>
+                </div>
+
+
+                <div class="col-12 col-md">
+                    <article class="bg-white border rounded-4 shadow-sm p-4 h-100">
+                        <div class="dns-icon bg-primary text-white rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3">
+                            <i class="bi bi-person fs-2"></i>
+                        </div>
+
+                        <h3 class="h5 fw-bold text-primary">User</h3>
+                        <p class="text-secondary mb-0">
+                            The user types a domain name such as google.com.
+                        </p>
+                    </article>
+                </div>
+
+                <div class="col-md-auto d-none d-md-block">
+                    <i class="bi bi-arrow-right fs-2 text-primary"></i>
+                </div>
+
+         </section>
+
+        <!-- Start  -->
+
+
     </main>
 
-    <footer>
-        footer content
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <div class="container">
+
+            <h5 class="fw-bold mb-2">HTML Fundamentals Reference Website</h5>
+
+            <p class="mb-1">
+                Module: Internet Technologies
+            </p>
+
+            <p class="mb-1">
+                Coursework Title: HTML Fundamentals Reference Website
+            </p>
+
+            <p class="mb-3">
+                Coursework Type: Practical Exercise
+            </p>
+
+            <hr class="border-light">
+
+            <p class="mb-0 small">
+                &copy; 2026 Created by Your Name. All rights reserved.
+            </p>
+
+        </div>
     </footer>
 
     <!-- Internet Section -->
-    
-    
+
+
 
     <!-- JS Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
