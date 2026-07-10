@@ -4,7 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>HTML Fundamentals Reference Website</title>
+
+    <link rel="icon" type="image/png" href="assest/logo.avif">
+
 
     <!-- CSS styles -->
 
@@ -19,6 +22,12 @@
 
     <!-- internal CSS -->
     <style>
+        .hero-logo {
+            width: 90px;
+            height: 90px;
+            object-fit: contain;
+        }
+
         .navbar-blue-900 {
             background-color: #0c3065;
         }
@@ -79,7 +88,7 @@
                         <a class="nav-link text-white" href="#how-it-works">How It Works</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Services</a>
+                        <a class="nav-link text-white" href="#services">Services</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-white" href="#daily-life">Daily Life</a>
@@ -91,10 +100,10 @@
                         <a class="nav-link text-white" href="#dns">DNS</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#">HTML Tags</a>
+                        <a class="nav-link text-white" href="#html-tags">HTML Tags</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Conclusion</a>
+                        <a class="nav-link text-white" href="#conclusion">Conclusion</a>
                     </li>
                 </ul>
             </div>
@@ -103,14 +112,42 @@
 
     <!-- End of nav bar -->
 
-hi
     <!-- Start of header and subtitle -->
     <div class="container text-center">
         <div class="row text-center mb-3 py-5">
             <div class="col-12">
-                <h1 class="display-4 fw-bold text-primary ">HTML Fundamentals Reference Website</h1>
+                
+                <h1 class="display-1 fw-bold text-primary">HTML Fundamentals Reference Website</h1>
+                
                 <p class="lead text-muted text-center">A beginner-friendly reference guide to Internet concepts, web
                     browsers, DNS, and essential HTML tags.</p>
+            </div>
+
+            <div class="row align-items-center g-4">
+
+                <div class="col-lg-7">
+                    <h2 class="text-primary fw-bold mb-3">
+                        Welcome to the HTML Fundamentals Reference Website
+                    </h2>
+
+                    <p class="lead text-secondary">
+                        This website is a reference guide for beginners who are learning Internet Technologies and HTML.
+                        It explains the basic concepts of the Internet, how the Internet works, the role of web
+                        browsers,
+                        the importance of DNS, and commonly used HTML tags.
+                    </p>
+
+                    <p>
+                        HTML is the foundation of web development. It is used to structure content on web pages using
+                        elements such as headings, paragraphs, lists, links, images, tables, and forms.
+                    </p>
+                </div>
+
+                <div class="col-lg-5">
+                    <img src="assest/home.png" alt="HTML and Internet learning"
+                        class="img-fluid rounded-4 shadow-sm">
+                </div>
+
             </div>
         </div>
     </div>
@@ -177,7 +214,7 @@ hi
         <!--End of Internet Section -->
 
         <!-- Start of How It Works Section -->
-        <section id="how-it-works" class="container my-5">
+        <section id="service" class="container my-5">
             <div class="card shadow-sm border-0">
                 <div class="card-body p-4 p-md-5">
 
@@ -649,7 +686,7 @@ hi
                     </article>
                 </div>
 
-        
+
                 <div class="col-md-auto d-none d-md-block">
                     <i class="bi bi-arrow-right fs-2 text-primary"></i>
                 </div>
@@ -671,7 +708,7 @@ hi
                     </article>
                 </div>
 
-               
+
                 <div class="col-md-auto d-none d-md-block">
                     <i class="bi bi-arrow-right fs-2 text-primary"></i>
                 </div>
@@ -692,7 +729,7 @@ hi
                     </article>
                 </div>
 
-                
+
                 <div class="col-md-auto d-none d-md-block">
                     <i class="bi bi-arrow-right fs-2 text-primary"></i>
                 </div>
@@ -736,9 +773,950 @@ hi
             </div>
         </section>
 
-        <!-- Start  -->
+        <!-- Start of HTML Tags -->
+
+        <section id="html-tags" class="container py-5">
+
+            <div class="text-center mb-5">
+                <h2 class="text-primary fw-bold">HTML Tags Reference Guide</h2>
+                <p class="lead text-secondary">
+                    This section explains important HTML tags with their purpose, usage, and example idea.
+                </p>
+            </div>
+
+            <div class="accordion shadow-sm" id="htmlTagsAccordion">
 
 
+                <!-- Basic Tags -->
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button fw-bold text-primary" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#basicTags" aria-expanded="true" aria-controls="basicTags">
+                            Basic Document Tags
+                        </button>
+                    </h3>
+
+                    <div id="basicTags" class="accordion-collapse collapse show" data-bs-parent="#htmlTagsAccordion">
+
+                        <div class="accordion-body">
+                            <table class="table table-bordered table-hover align-middle">
+                                <thead class="table-primary">
+                                    <tr>
+                                        <th>No</th>
+                                        <th>Tag</th>
+                                        <th>Purpose</th>
+                                        <th>When to Use</th>
+                                        <th>Example Tags</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td><code>&lt;html&gt;</code></td>
+                                        <td>Defines the root of an HTML document.</td>
+                                        <td>Use it to contain the entire webpage.</td>
+                                        <td><code>&lt;html lang="en"&gt; ... &lt;/html&gt;</code></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>2</td>
+                                        <td><code>&lt;head&gt;</code></td>
+                                        <td>Contains page information not directly shown on the page.</td>
+                                        <td>Use it for title, metadata, and links.</td>
+                                        <td><code>&lt;head&gt; ... &lt;/head&gt;</code></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>3</td>
+                                        <td><code>&lt;title&gt;</code></td>
+                                        <td>Sets the title of the webpage.</td>
+                                        <td>Use it to show a name on the browser tab.</td>
+                                        <td><code>&lt;title&gt;HTML Fundamentals Reference Website&lt;/title&gt;</code>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>4</td>
+                                        <td><code>&lt;meta&gt;</code></td>
+                                        <td>Provides metadata about the page.</td>
+                                        <td>Use it for character set, viewport, and description.</td>
+                                        <td><code>&lt;meta charset="UTF-8"&gt;</code></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>5</td>
+                                        <td><code>&lt;body&gt;</code></td>
+                                        <td>Contains visible page content.</td>
+                                        <td>Use it for all text, images, links, and sections shown to users.</td>
+                                        <td><code>&lt;body&gt; Page content goes here &lt;/body&gt;</code></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Semantic Tags -->
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button fw-bold text-primary" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#semanticTags" aria-expanded="true" aria-controls="semanticTags">
+                            Semantic Layout Tags
+                        </button>
+                    </h3>
+
+                    <div id="semanticTags" class="accordion-collapse collapse show" data-bs-parent="#htmlTagsAccordion">
+
+                        <div class="accordion-body">
+                            <table class="table table-bordered table-hover align-middle">
+                                <thead class="table-primary">
+                                    <tr>
+                                        <th>No</th>
+                                        <th>Tag</th>
+                                        <th>Purpose</th>
+                                        <th>When to Use</th>
+                                        <th>Example Idea</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+                                    <tr>
+                                        <td>6</td>
+                                        <td><code>&lt;header&gt;</code></td>
+                                        <td>Represents the top part of a page or section</td>
+                                        <td>Use it for title, logo and introdction.</td>
+                                        <td>The website title appears inside the header.</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>7</td>
+                                        <td><code>&lt;nav&gt;</code></td>
+                                        <td>Define navigation links</td>
+                                        <td>Use it for menus and page links</td>
+                                        <td>Links to internet Basics anf HTML Tags sections.</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>8</td>
+                                        <td><code>&lt;main&gt;</code></td>
+                                        <td>Represents the main content of the page</td>
+                                        <td>Use it to wrap the central content</td>
+                                        <td>All assignment content appears inside main</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>9</td>
+                                        <td><code>&lt;section&gt;</code></td>
+                                        <td>Groups related content</td>
+                                        <td>Use it to devide the page into topics</td>
+                                        <td>One section for DNS and another for browsers</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>10</td>
+                                        <td><code>&lt;article&gt;</code></td>
+                                        <td>Represents indepdent content</td>
+                                        <td>Use it for each tag explanation or topic explanation.</td>
+                                        <td>Each HTML tag can be explained in one article.</td>
+                                    </tr>
+
+
+                                    <tr>
+                                        <td>11</td>
+                                        <td><code>&lt;aside&gt;</code></td>
+                                        <td>Contain extra related content/td>
+                                        <td>Use it for notes, tips or side information.</td>
+                                        <td>A small note about HTTPS security.</td>
+                                    </tr>
+
+
+                                    <tr>
+                                        <td>12</td>
+                                        <td><code>&lt;footer&gt;</code></td>
+                                        <td>Represent the bottom part of a page</td>
+                                        <td>Use it for author name, copyright or course details </td>
+                                        <td>Footer contains your name and module name.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- Text Tags -->
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button fw-bold text-primary" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#textTags" aria-expanded="true" aria-controls="textTags">
+                            Text Tags
+                        </button>
+                    </h3>
+
+                    <div id="textTags" class="accordion-collapse collapse show" data-bs-parent="#htmlTagsAccordion">
+
+                        <div class="accordion-body">
+                            <table class="table table-bordered table-hover align-middle">
+                                <thead class="table-primary">
+                                    <tr>
+                                        <th>No</th>
+                                        <th>Tag</th>
+                                        <th>Purpose</th>
+                                        <th>When to Use</th>
+                                        <th>Example Idea</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+                                    <tr>
+                                        <td>13</td>
+                                        <td><code>&lt;h1&gt;</code></td>
+                                        <td>Defines most important heading</td>
+                                        <td>Use it once for the main page title</td>
+                                        <td>"HTML Fundamentals References Website"</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>14</td>
+                                        <td><code>&lt;h2&gt;</code></td>
+                                        <td>Defines a major section heading</td>
+                                        <td>Use it for main section</td>
+                                        <td>"What is the internet?"</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>15</td>
+                                        <td><code>&lt;h3&gt;</code></td>
+                                        <td>Defines a subsection heading</td>
+                                        <td>Use it under h2 section</td>
+                                        <td>"Client-Server Model"</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>16</td>
+                                        <td><code>&lt;h4&gt;</code></td>
+                                        <td>Define smaller heading</td>
+                                        <td>Use it for deeper subtopics</td>
+                                        <td>"HTTP Request"</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>17</td>
+                                        <td><code>&lt;h5&gt;</code></td>
+                                        <td>Define a lower level heading</td>
+                                        <td>Use it for small divisions</td>
+                                        <td>"Browser Features"</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>18</td>
+                                        <td><code>&lt;h6&gt;</code></td>
+                                        <td>Define the least important heading</td>
+                                        <td>Use it for smallest heading level</td>
+                                        <td>"Extra Note"</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>19</td>
+                                        <td><code>&lt;p&gt;</code></td>
+                                        <td>Define a paragraph</td>
+                                        <td>Use it for normal text content</td>
+                                        <td>Explain about how DNS works</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>20</td>
+                                        <td><code>&lt;br&gt;</code></td>
+                                        <td>Insert a line break</td>
+                                        <td>Use it when text must move to the next line</td>
+                                        <td>Breaking an address into separate lines</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>21</td>
+                                        <td><code>&lt;hr&gt;</code></td>
+                                        <td>Add a horizontal line</td>
+                                        <td>Use it separate section visually</td>
+                                        <td>Line between interner topics and HTMLL tags</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>22</td>
+                                        <td><code>&lt;strong&gt;</code></td>
+                                        <td>Show important text</td>
+                                        <td>Use it to give stronng importance</td>
+                                        <td>Highlight"DNS is important"</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>23</td>
+                                        <td><code>&lt;em&gt;</code></td>
+                                        <td>Emphasizes text</td>
+                                        <td>Use it when a word needs stress or emphasis</td>
+                                        <td>Emphasize the word "SECURE"</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>24</td>
+                                        <td><code>&lt;b&gt;</code></td>
+                                        <td>Mark text bold visually</td>
+                                        <td>Use it for bold styling without extra importance</td>
+                                        <td>Bold a keyword in a definition</td>
+                                    </tr>
+
+
+                                    <tr>
+                                        <td>25</td>
+                                        <td><code>&lt;i&gt;</code></td>
+                                        <td>Makes text italic visually</td>
+                                        <td>Use it for terms, names or alternate voice</td>
+                                        <td>Italicize a technical term</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>26</td>
+                                        <td><code>&lt;u&gt;</code></td>
+                                        <td>Underlines text</td>
+                                        <td>Use it for carefully for underlined content</td>
+                                        <td>Underline a key term in notes</td>
+                                    </tr>
+
+
+                                    <tr>
+                                        <td>27</td>
+                                        <td><code>&lt;mark&gt;</code></td>
+                                        <td>Highlights text</td>
+                                        <td>Use it for important highlight information</td>
+                                        <td>Highlight "minimum 75 tags"</td>
+                                    </tr>
+
+
+                                    <tr>
+                                        <td>28</td>
+                                        <td><code>&lt;small&gt;</code></td>
+                                        <td>show smaller text</td>
+                                        <td>Use it for side notes or legal text</td>
+                                        <td>Small copyright text in footer</td>
+                                    </tr>
+
+
+                                    <tr>
+                                        <td>29</td>
+                                        <td><code>&lt;sub&gt;</code></td>
+                                        <td>Creates subscript text</td>
+                                        <td>Use it for chemical formulas or footnotes</td>
+                                        <td>H<sub>2</sub>O uses subscript 2</td>
+                                    </tr>
+
+
+                                    <tr>
+                                        <td>30</td>
+                                        <td><code>&lt;sup&gt;</code></td>
+                                        <td>Create superscript text</td>
+                                        <td>Use it for power or references</td>
+                                        <td>2<sup>2</sup> use supercript 2</td>
+                                    </tr>
+
+
+                                    <tr>
+                                        <td>31</td>
+                                        <td><code>&lt;code&gt;</code></td>
+                                        <td>Represents computer code text</td>
+                                        <td>Use it when mentioning tag names or code words</td>
+                                        <td>Display the word "header as code text"</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>32</td>
+                                        <td><code>&lt;pre&gt;</code></td>
+                                        <td>Preserves spacing and line breaks</td>
+                                        <td>Use it for formatted examples</td>
+                                        <td>Show a multi-line HTML example</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- List Tags -->
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button fw-bold text-primary" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#listTags" aria-expanded="true" aria-controls="listTags">
+                            List Tags
+                        </button>
+                    </h3>
+
+                    <div id="listTags" class="accordion-collapse collapse show" data-bs-parent="#htmlTagsAccordion">
+
+                        <div class="accordion-body">
+                            <table class="table table-bordered table-hover align-middle">
+                                <thead class="table-primary">
+                                    <tr>
+                                        <th>No</th>
+                                        <th>Tag</th>
+                                        <th>Purpose</th>
+                                        <th>When to Use</th>
+                                        <th>Example Idea</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+                                    <tr>
+                                        <td>33</td>
+                                        <td><code>&lt;ul&gt;</code></td>
+                                        <td>Creates an unordered list.</td>
+                                        <td>Use it for bullet list</td>
+                                        <td>List Interner Services</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>34</td>
+                                        <td><code>&lt;ol&gt;</code></td>
+                                        <td>Create an ordered list</td>
+                                        <td>Use it for numbered steps</td>
+                                        <td>Steps for how a browser loads a page</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>35</td>
+                                        <td><code>&lt;li&gt;</code></td>
+                                        <td>Define a list items</td>
+                                        <td>Use it inside ordered or unordered lists</td>
+                                        <td>One item such as "Email"</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>36</td>
+                                        <td><code>&lt;dl&gt;</code></td>
+                                        <td>Creates a description list</td>
+                                        <td>Use it for terms and defenitions</td>
+                                        <td>A glossary of internet terms</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>37</td>
+                                        <td><code>&lt;dt&gt;</code></td>
+                                        <td>Defines a term in a description list</td>
+                                        <td>Use it for the word being explained</td>
+                                        <td>Term:DNS</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>38</td>
+                                        <td><code>&lt;dd&gt;</code></td>
+                                        <td>Defines the description of a term</td>
+                                        <td>Use it to explain the term</td>
+                                        <td>Description:Domain Name System</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Media Tags -->
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button fw-bold text-primary" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#mediaTags" aria-expanded="true" aria-controls="mediaTags">
+                            Media Tags
+                        </button>
+                    </h3>
+
+                    <div id="mediaTags" class="accordion-collapse collapse show" data-bs-parent="#htmlTagsAccordion">
+
+                        <div class="accordion-body">
+                            <table class="table table-bordered table-hover align-middle">
+                                <thead class="table-primary">
+                                    <tr>
+                                        <th>No</th>
+                                        <th>Tag</th>
+                                        <th>Purpose</th>
+                                        <th>When to Use</th>
+                                        <th>Example Idea</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+                                    <tr>
+                                        <td>39</td>
+                                        <td><code>&lt;a&gt;</code></td>
+                                        <td>Create a hyperlink</td>
+                                        <td>Use it to link to another page, section, or website.</td>
+                                        <td>Link to the DNS section.</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>40</td>
+                                        <td><code>&lt;img&gt;</code></td>
+                                        <td>Displays an image.</td>
+                                        <td>Use it to show diagrams or pictures.</td>
+                                        <td>Show a client-server diagram.</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>41</td>
+                                        <td><code>&lt;figure&gt;</code></td>
+                                        <td>Groups media content with a caption.</td>
+                                        <td>Use it for images, diagrams, or charts.</td>
+                                        <td>A DNS diagram inside a figure.</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>42</td>
+                                        <td><code>&lt;figcaption&gt;</code></td>
+                                        <td>Adds a caption to a figure.</td>
+                                        <td>Use it to describe an image or diagram.</td>
+                                        <td>Caption: “How DNS works.”</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>43</td>
+                                        <td><code>&lt;video&gt;</code></td>
+                                        <td>Embeds video content.</td>
+                                        <td>Use it to show a video on a webpage.</td>
+                                        <td>A tutorial video about HTML.</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>44</td>
+                                        <td><code>&lt;audio&gt;</code></td>
+                                        <td>Embeds audio content.</td>
+                                        <td>Use it for sound or voice clips.</td>
+                                        <td>An audio explanation of Internet basics.</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>45</td>
+                                        <td><code>&lt;source&gt;</code></td>
+                                        <td>Provides media file sources.</td>
+                                        <td>Use it inside audio or video elements.</td>
+                                        <td>Provide a video file format.</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>46</td>
+                                        <td><code>&lt;iframe&gt;</code></td>
+                                        <td>Embeds another webpage.</td>
+                                        <td>Use it for maps, videos, or external content.</td>
+                                        <td>Embed a map or video frame.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- Table Tags -->
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button fw-bold text-primary" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#tableTags" aria-expanded="true" aria-controls="tableTags">
+                            Table Tags
+                        </button>
+                    </h3>
+
+                    <div id="tableTags" class="accordion-collapse collapse show" data-bs-parent="#htmlTagsAccordion">
+
+                        <div class="accordion-body">
+                            <table class="table table-bordered table-hover align-middle">
+                                <thead class="table-primary">
+                                    <tr>
+                                        <th>No</th>
+                                        <th>Tag</th>
+                                        <th>Purpose</th>
+                                        <th>When to Use</th>
+                                        <th>Example Idea</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+                                    <tr>
+                                        <td>47</td>
+                                        <td><code>&lt;table&gt;</code></td>
+                                        <td>Creates a table.</td>
+                                        <td>Use it to organize data in rows and columns.</td>
+                                        <td>A table of HTML tags.</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>48</td>
+                                        <td><code>&lt;caption&gt;</code></td>
+                                        <td>Adds a title to a table.</td>
+                                        <td>Use it to describe what the table shows.</td>
+                                        <td>“Common HTML Tags.”</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>49</td>
+                                        <td><code>&lt;thead&gt;</code></td>
+                                        <td>Groups the table header rows.</td>
+                                        <td>Use it for column headings.</td>
+                                        <td>Header row with Tag, Purpose, Use.</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>50</td>
+                                        <td><code>&lt;tbody&gt;</code></td>
+                                        <td>Groups the main table body.</td>
+                                        <td>Use it for main table data.</td>
+                                        <td>Rows explaining each HTML tag.</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>51</td>
+                                        <td><code>&lt;tfoot&gt;</code></td>
+                                        <td>Groups footer rows in a table.</td>
+                                        <td>Use it for summary rows.</td>
+                                        <td>Total number of tags listed.</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>52</td>
+                                        <td><code>&lt;tr&gt;</code></td>
+                                        <td>Defines a table row.</td>
+                                        <td>Use it for each row in a table.</td>
+                                        <td>One row for the paragraph tag.</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>53</td>
+                                        <td><code>&lt;th&gt;</code></td>
+                                        <td>Defines a table header cell.</td>
+                                        <td>Use it for column titles.</td>
+                                        <td>“Tag Name” as a header cell.</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>54</td>
+                                        <td><code>&lt;td&gt;</code></td>
+                                        <td>Defines a normal table data cell.</td>
+                                        <td>Use it for table information.</td>
+                                        <td>“Used for paragraphs” as a data cell.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Form Tags -->
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button fw-bold text-primary" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#formTags" aria-expanded="true" aria-controls="formTags">
+                            Form Tags
+                        </button>
+                    </h3>
+
+                    <div id="formTags" class="accordion-collapse collapse show" data-bs-parent="#htmlTagsAccordion">
+
+                        <div class="accordion-body">
+                            <table class="table table-bordered table-hover align-middle">
+                                <thead class="table-primary">
+                                    <tr>
+                                        <th>No</th>
+                                        <th>Tag</th>
+                                        <th>Purpose</th>
+                                        <th>When to Use</th>
+                                        <th>Example Idea</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+                                    <tr>
+                                        <td>55</td>
+                                        <td><code>&lt;form&gt;</code></td>
+                                        <td>Creates a form for user input.</td>
+                                        <td>Use it for contact forms, login forms, or search forms.</td>
+                                        <td>A feedback form for the website.</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>56</td>
+                                        <td><code>&lt;lable&gt;</code></td>
+                                        <td>Adds a label for an input field.</td>
+                                        <td>Use it to describe what the user should enter.</td>
+                                        <td>Label for “Name.”</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>57</td>
+                                        <td><code>&lt;input&gt;</code></td>
+                                        <td>Creates an input field</td>
+                                        <td>Use it for text, email, password, checkbox, or radio input.</td>
+                                        <td>User enters their email address.</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>58</td>
+                                        <td><code>&lt;textarea&gt;</code></td>
+                                        <td>Creates a large text input area.</td>
+                                        <td>Use it for messages or comments.</td>
+                                        <td>User writes feedback.</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>59</td>
+                                        <td><code>&lt;button&gt;</code></td>
+                                        <td>Creates a clickable button.</td>
+                                        <td>Use it for submitting forms or actions.</td>
+                                        <td>A "Submit" button.</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>60</td>
+                                        <td><code>&lt;select&gt;</code></td>
+                                        <td>Creates a dropdown list.</td>
+                                        <td>Use it when users choose from options.</td>
+                                        <td>Select a topic such as HTML or DNS.</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>61</td>
+                                        <td><code>&lt;option&gt;</code></td>
+                                        <td>Defines an item in a dropdown list.</td>
+                                        <td>Use it inside a select element.</td>
+                                        <td>Option: "HTML Tags."</td>
+                                    </tr>
+
+
+                                    <tr>
+                                        <td>62</td>
+                                        <td><code>&lt;fielset&gt;</code></td>
+                                        <td>Groups related form controls.</td>
+                                        <td>Use it to organize form sections.</td>
+                                        <td>Group personal details in a form.</td>
+                                    </tr>
+
+
+                                    <tr>
+                                        <td>63</td>
+                                        <td><code>&lt;legend&gt;</code></td>
+                                        <td>Adds a title to a fieldset.</td>
+                                        <td>Use it to describe a group of form fields.</td>
+                                        <td>"Student Information."</td>
+                                    </tr>
+
+
+                                    <tr>
+                                        <td>64</td>
+                                        <td><code>&lt;datalist&gt;</code></td>
+                                        <td>Provides suggested input options.</td>
+                                        <td>Use it to give autocomplete suggestions.</td>
+                                        <td>Suggest browser names like Chrome or Firefox.</td>
+                                    </tr>
+
+
+                                    <tr>
+                                        <td>65</td>
+                                        <td><code>&lt;output&gt;</code></td>
+                                        <td>Displays calculation or result output.</td>
+                                        <td>Use it to show a result from user input.</td>
+                                        <td>Display a form result or score.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- Quotation Tags -->
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button fw-bold text-primary" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#quotationTags" aria-expanded="true" aria-controls="quotationTags">
+                            Quotation Tags
+                        </button>
+                    </h3>
+
+                    <div id="quotationTags" class="accordion-collapse collapse show"
+                        data-bs-parent="#htmlTagsAccordion">
+
+                        <div class="accordion-body">
+                            <table class="table table-bordered table-hover align-middle">
+                                <thead class="table-primary">
+                                    <tr>
+                                        <th>No</th>
+                                        <th>Tag</th>
+                                        <th>Purpose</th>
+                                        <th>When to Use</th>
+                                        <th>Example Idea</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+                                    <tr>
+                                        <td>66</td>
+                                        <td><code>&lt;blackquote&gt;</code></td>
+                                        <td>Represents a long quotation.</td>
+                                        <td>Use it for quoted paragraphs from another source.</td>
+                                        <td>A quoted definition of the Internet.</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>67</td>
+                                        <td><code>&lt;q&gt;</code></td>
+                                        <td>Represents a short inline quotation.</td>
+                                        <td>Use it for short quotes inside a sentence.</td>
+                                        <td>A short quoted phrase about HTML.</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>68</td>
+                                        <td><code>&lt;cite&gt;</code></td>
+                                        <td>Represents the title of a creative work or source.</td>
+                                        <td>Use it for books, websites, or articles.</td>
+                                        <td>Cite a web development book.</td>
+                                    </tr>
+
+
+                                    <tr>
+                                        <td>69</td>
+                                        <td><code>&lt;abbr&gt;</code></td>
+                                        <td>Represents an abbreviation.</td>
+                                        <td>Use it to explain short forms.</td>
+                                        <td>DNS means Domain Name System.</td>
+                                    </tr>
+
+
+                                    <tr>
+                                        <td>70</td>
+                                        <td><code>&lt;address&gt;</code></td>
+                                        <td>Provides contact information.</td>
+                                        <td>Use it for author or organization contact details.</td>
+                                        <td>Student email in the footer.</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>71</td>
+                                        <td><code>&lt;time&gt;</code></td>
+                                        <td>Represents a date or time.</td>
+                                        <td>Use it for dates, times, or deadlines.</td>
+                                        <td>Assignment submission date.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Generic and Interactive Tags -->
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button fw-bold text-primary" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#genericTags" aria-expanded="true" aria-controls="genericTags">
+                            Generic and Interactive Tags
+                        </button>
+                    </h3>
+
+                    <div id="genericTags" class="accordion-collapse collapse show" data-bs-parent="#htmlTagsAccordion">
+
+                        <div class="accordion-body">
+                            <table class="table table-bordered table-hover align-middle">
+                                <thead class="table-primary">
+                                    <tr>
+                                        <th>No</th>
+                                        <th>Tag</th>
+                                        <th>Purpose</th>
+                                        <th>When to Use</th>
+                                        <th>Example Idea</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+                                    <tr>
+                                        <td>72</td>
+                                        <td><code>&lt;span&gt;</code></td>
+                                        <td>Groups small inline text.</td>
+                                        <td>Use it to style or identify part of a sentence.</td>
+                                        <td>Highlight one word inside a paragraph.</td>
+                                    </tr>
+
+
+                                    <tr>
+                                        <td>73</td>
+                                        <td><code>&lt;div&gt;</code></td>
+                                        <td>Groups block-level content.</td>
+                                        <td>Use it when no specific semantic tag fits.</td>
+                                        <td>Group several related items together.</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>74</td>
+                                        <td><code>&lt;details&gt;</code></td>
+                                        <td>Creates expandable content.</td>
+                                        <td>Use it for information users can open or close.</td>
+                                        <td>Extra explanation about HTTP.</td>
+                                    </tr>
+
+
+                                    <tr>
+                                        <td>75</td>
+                                        <td><code>&lt;summary&gt;</code></td>
+                                        <td>Defines the visible heading for details.</td>
+                                        <td>Use it inside the details element.</td>
+                                        <td>“Click to learn more about DNS.”</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Conclusion -->
+        <section id="conclusion" class="container py-5">
+            <div class="bg-primary-subtle rounded-4 shadow-sm p-5 text-center">
+                <h2 class="text-primary fw-bold mb-3">Conclusion</h2>
+                <p class="lead text-secondary">
+                    HTML is the basic building block of web development. It helps developers create structured web pages
+                    using headings, paragraphs, images, links, tables, forms, and semantic layout elements.
+                </p>
+
+                <p class=" text-secondary">
+                    The Internet connects people and devices around the world. Web browsers help users access websites,
+                    while DNS helps convert domain names into IP addresses so websites can be found easily.
+                </p>
+
+                <p class=" text-secondary">
+                    By understanding Internet fundamentals and HTML tags, beginners can build a strong foundation for
+                    web development. This reference website provides a simple guide to the basic concepts of the
+                    Internet and the most important HTML tags.
+                </p>
+
+                <div class="d-flex flex-wrap justify-content-center gap-2 mt-4">
+                    <span class="badge text-bg-primary p-2">Internet Bsics</span>
+                    <span class="badge text-bg-success p-2">Web Browser & DNS</span>
+                    <span class="badge text-bg-primary p-2">75 HTML Tags</span>
+                </div>
+
+                <p class="fw-bold text-primary mt-4 mb-0">
+                    Thank you for visiting this reference website.
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- End of HTML Tags -->
     </main>
 
     <footer class=" bg-dark text-white text-center py-4 mt-5">
@@ -747,21 +1725,17 @@ hi
             <h5 class="fw-bold mb-2">HTML Fundamentals Reference Website</h5>
 
             <p class="mb-1">
-                Module: Internet Technologies
+                Internet Technologies - iCET
             </p>
 
             <p class="mb-1">
-                Coursework Title: HTML Fundamentals Reference Website
-            </p>
-
-            <p class="mb-3">
-                Coursework Type: Practical Exercise
+                HTML Fundamentals Reference Website
             </p>
 
             <hr class="border-light">
 
             <p class="mb-0 small">
-                &copy; 2026 Created by Your Name. All rights reserved.
+                &copy; 2026 Created by Hiruni Kaveesha - pr24111162 All rights reserved.
             </p>
 
         </div>
